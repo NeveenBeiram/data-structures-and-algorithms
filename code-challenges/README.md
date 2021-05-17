@@ -25,3 +25,12 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ## Assignment Submission
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+
+
+
+## 401 code challenge
+| code challenge #  | code challenge README  | 
+|---|---|
+| 1  | [readme code challenge 1]()  |
+| 2  |[readme code challenge 2](401code-challenges/array-shift/README.md)   |
+|   |   |
