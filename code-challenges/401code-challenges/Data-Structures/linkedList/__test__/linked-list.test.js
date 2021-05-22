@@ -116,4 +116,18 @@ describe('liked list class', () => {
   });
 
 
+
+
+  it ('should throw error',()=>{
+    //arrange
+    let linkedList = new LinkedList ();
+    //act
+    linkedList.insert();
+
+    //assert
+    expect(linkedList.head.value).toThrowError;
+
+  });
+
+
 });
