@@ -33,6 +33,7 @@ describe('liked list class', () => {
     // expect(ll.head.next).toBeNull();
   });
 
+
   it('Can properly insert into the linked list (should add to the Head( The head property will properly point to the first node in the linked list))', () => {
     //arrange
     let ll = new LinkedList();
@@ -115,19 +116,6 @@ describe('liked list class', () => {
 
   });
 
-
-
-
-  it ('should throw error',()=>{
-    //arrange
-    let linkedList = new LinkedList ();
-    //act
-    linkedList.insert();
-
-    //assert
-    expect(linkedList.head.value).toThrowError;
-
-  });
 
 
 });
