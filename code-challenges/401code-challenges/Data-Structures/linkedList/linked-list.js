@@ -18,8 +18,11 @@ class LinkedList {
         this.head = temp;
       }
     }catch(err){
-      console.error(`error in insert method`,err);
-    //   return err;
+      // console.error(`error in insert method`,err);
+      return err;
+      // return new Error;
+      // return err;
+
     }
   }
 
