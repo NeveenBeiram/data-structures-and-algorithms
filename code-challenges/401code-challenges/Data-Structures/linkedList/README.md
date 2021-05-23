@@ -66,4 +66,6 @@ functions for the linked list
 
 ## API
 
-![white board](./codechalleng6.png)
+![white board](./whiteboadr6.PNG)
+
+[code](./linked-list.js)
