@@ -5,7 +5,9 @@ The most defining feature of a Linked List is that each Node references the next
 
 <hr>
 
-## Challenge
+## Challenges :
+
+### code challenge 5
 
 functions for the linked list 
 1. insert : add nodes to the head of the linked list 
@@ -33,4 +35,35 @@ functions for the linked list
 
 ![white board](./codechalleng5.png)
 
+<hr>
+<hr>
 
+### code challenge 6
+
+functions for the linked list 
+
+1. append : add nodes at the end of the linked list 
+2. insertBefore : add node before specific value in the linkedList
+3. insertAfter : add node after specific value in the linkedList
+
+<hr>
+
+## Approach & Efficiency
+
+
+* new methods to the LinkedList class : 
+
+    1.  append(value) which adds a new node with the given value to the end of the list
+        Space : O(1)  Time: O(n)
+
+    2.  insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+        Space: O(1)  Time: O(n)
+
+    3. insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+        Space: O(1)  Time:O(n)
+   
+<hr>
+
+## API
+
+![white board](./codechalleng6.png)
