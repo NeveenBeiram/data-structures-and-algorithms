@@ -161,8 +161,6 @@ class LinkedList {
       }
     }catch(err){
       throw new Error (`Error in kthFromEnd method -> the k not in the linkedList` , err);
-
-
     }
   }
 

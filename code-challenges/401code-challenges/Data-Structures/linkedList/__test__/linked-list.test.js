@@ -306,4 +306,18 @@ describe('liked list class', () => {
     expect(ll.kthFromEnd(-1)).toThrowError;
   });
 
+  it('kth -> linkedlist of size 1',()=>{
+let ll=new LinkedList();
+ll.append(5);
+
+expect(ll.kthFromEnd(0)).toEqual(5);
+  });
+
+  it('kth -> linkedlist of size 1',()=>{
+let ll=new LinkedList();
+ll.append(5);
+
+expect(ll.kthFromEnd(1)).toThrowError;
+  });
+
 });
