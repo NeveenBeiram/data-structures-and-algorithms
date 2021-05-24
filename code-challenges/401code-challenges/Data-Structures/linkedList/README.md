@@ -69,3 +69,40 @@ functions for the linked list
 ![white board](./whiteboadr6.PNG)
 
 [code](./linked-list.js)
+
+
+<hr>
+<hr>
+
+### code challenge 7
+
+functions for the linked list 
+
+* kthFromEnd : takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+
+
+<hr>
+
+## Approach & Efficiency
+
+
+* new methods to the LinkedList class : 
+
+    1.  kthFromEnd(k) which return the node's value that is k from the end of the linked list.
+        Space : O(1)  Time: O(n)
+   
+<hr>
+
+## API
+
+![white board](./whiteboard7.PNG)
+
+[code](./linked-list.js)
+
+<hr>
+
+## Solution
+
+***to run the test:***
+
+npm test linked-list.test.js

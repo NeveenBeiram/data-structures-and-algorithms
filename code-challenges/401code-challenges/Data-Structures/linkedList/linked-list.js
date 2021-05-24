@@ -5,6 +5,7 @@ const Node = require('./node.js');
 class LinkedList {
   constructor() {
     this.head = null;
+    this.size=0;
   }
 
   insert (value) {
@@ -13,9 +14,11 @@ class LinkedList {
       let temp = new Node(value);
       if (!this.head) {
         this.head = temp;
+        this.size++;
       } else {
         temp.next = this.head;
         this.head = temp;
+        this.size++;
       }
     }catch(err){
       // console.error(`error in insert method`,err);
@@ -76,12 +79,14 @@ class LinkedList {
       let node = new Node(value);
       if (!this.head) {
         this.head = node;
+        this.size++;
       } else {
         let temp=this.head;
         while(temp.next){
           temp = temp.next;
         }
         temp.next=node;
+        this.size++;
       }
 
     }catch(err){
@@ -98,12 +103,14 @@ class LinkedList {
       if(current.value===value){
         newNode.next=this.head;
         this.head=newNode;
+        this.size++;
       }else{
         while (current){
 
           if (current.next.value === value){
             newNode.next = current.next;
             current.next = newNode;
+            this.size++;
             return;
           }else {
             current = current.next;
@@ -118,11 +125,6 @@ class LinkedList {
   }
 
 
-
-
-
-
-
   insertAfter(value, newVal){
     try {
       let current = this.head;
@@ -131,6 +133,7 @@ class LinkedList {
         if (current.value === value){
           newNode.next = current.next;
           current.next = newNode;
+          this.size++;
           return;
         }else {
           current = current.next;
@@ -143,7 +146,28 @@ class LinkedList {
   }
 
 
+  kthFromEnd(k){
+
+    try{
+
+      let temp=this.head;
+      let count=this.size-1;
+      while(temp){
+        if(k===count){
+          return temp.value;
+        }
+        count--;
+        temp=temp.next;
+      }
+    }catch(err){
+      throw new Error (`Error in kthFromEnd method -> the k not in the linkedList` , err);
+
+
+    }
+  }
 
 }
+
+
 
 module.exports = LinkedList;
