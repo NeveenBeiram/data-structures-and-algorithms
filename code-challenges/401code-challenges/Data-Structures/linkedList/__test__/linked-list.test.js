@@ -265,4 +265,45 @@ describe('liked list class', () => {
     expect(ll.head.value).toThrowError;
   });
 
+
+  it('should find kth value in a linked list', () => {
+    let ll=new LinkedList();
+    ll.append(5);
+    ll.append(10);
+    ll.append(15);
+    ll.append(20);
+
+    expect(ll.kthFromEnd(0)).toEqual(20);
+    expect(ll.kthFromEnd(1)).toEqual(15);
+    expect(ll.kthFromEnd(2)).toEqual(10);
+    expect(ll.kthFromEnd(3)).toEqual(5);
+  });
+
+  it('kth error the k grater than the length',()=>{
+    let ll=new LinkedList();
+    ll.append(5);
+    ll.append(10);
+    ll.append(15);
+    ll.append(20);
+    expect(ll.kthFromEnd(5)).toThrowError;
+  });
+
+  it('kth error the k is equal to the size',()=>{
+    let ll=new LinkedList();
+    ll.append(5);
+    ll.append(10);
+    ll.append(15);
+    ll.append(20);
+    expect(ll.kthFromEnd(4)).toThrowError;
+  });
+
+  it('kth -> k negative number',()=>{
+    let ll=new LinkedList();
+    ll.append(5);
+    ll.append(10);
+    ll.append(15);
+    ll.append(20);
+    expect(ll.kthFromEnd(-1)).toThrowError;
+  });
+
 });
