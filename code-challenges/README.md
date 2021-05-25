@@ -31,7 +31,7 @@ When you finish the assignment each day, make a new pull request from your daily
 ## 401 code challenge
 | code challenge #  | code challenge README  | 
 |---|---|
-| 1 |[readme code challenge 1]()  |
+| 1 |[readme code challenge 1](401code-challenges/array-reverse/readme.md)  |
 | 2 |[readme code challenge 2](401code-challenges/array-shift/README.md)|
 | 3 |[readme code challenge 3](401code-challenges/array-binary-search/README.md)   |
 | 5 ||[readme code challenge 5](401code-challenges/Data-Structures/linkedList/README.md)
