@@ -24,3 +24,5 @@ console.log(rA(arr));
 console.log('---');
 let array2= [5,20,25];
 console.log(rA ( array2 ));
+
+module.exports=rA;
