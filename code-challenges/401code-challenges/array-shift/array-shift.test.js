@@ -10,5 +10,12 @@ describe('testing the insert shift array function',()=>{
     expect(insertShiftArray([2,7,20,23,30], 21)).toEqual([2,7,20,21,23,30]);
     expect(insertShiftArray([], 10)).toEqual([10]);
   });
+  it('test empty arr',()=>{
+    expect(insertShiftArray([],10)).toEqual([10]);
+  });
+  it('test different data type value',()=>{
+    expect(insertShiftArray([5,10],'s')).toEqual([5,'s',10]);
+  });
+
 });
 

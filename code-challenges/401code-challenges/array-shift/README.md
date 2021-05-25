@@ -6,7 +6,7 @@ insertShiftArray function which takes in an array and a value to be added.
 
 ## Whiteboard Process
 ![img](arrayShift.jpg)
-
+![img](code2edit.PNG)
 ## Approach & Efficiency
 
 * algorithm insertShiftArray(arr,val)
