@@ -106,3 +106,42 @@ functions for the linked list
 ***to run the test:***
 
 npm test linked-list.test.js
+
+
+
+<hr>
+<hr>
+
+### code challenge 8
+
+function :
+
+* zipLists : which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return zip linked list.
+
+
+
+<hr>
+
+## Approach & Efficiency
+
+
+* function : 
+
+    1.  zipLists : which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return zip linked list.
+    Space : O(1)  Time: O(n)
+   
+<hr>
+
+## API
+
+![white board](./white8.PNG)
+
+[code](./zipLinkedList.js)
+
+<hr>
+
+## Solution
+
+***to run the test:***
+
+npm test linked-list.test.js
