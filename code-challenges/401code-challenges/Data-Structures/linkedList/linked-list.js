@@ -96,6 +96,7 @@ class LinkedList {
   }
 
 
+
   insertBefore(value, newVal){
     try {
       let current = this.head;

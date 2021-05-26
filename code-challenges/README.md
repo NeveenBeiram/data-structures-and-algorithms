@@ -37,3 +37,4 @@ When you finish the assignment each day, make a new pull request from your daily
 | 5 ||[readme code challenge 5](401code-challenges/Data-Structures/linkedList/README.md)
 | 6 |[readme code challenge 6](401code-challenges/Data-Structures/linkedList/README.md)
 |7|[readme code challenge 7](401code-challenges/Data-Structures/linkedList/README.md)|
+|8|[readme code challenge 7](401code-challenges/Data-Structures/linkedList/README.md)|

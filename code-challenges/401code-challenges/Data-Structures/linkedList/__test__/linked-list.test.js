@@ -4,6 +4,9 @@ const Node = require('../node');
 const LinkedList = require('../linked-list');
 const { expect } = require('@jest/globals');
 
+const ZipLists=require('../zipLinkedList');
+
+
 describe('liked list class', () => {
 
   it('instantiate an empty linked list',()=>{
@@ -307,17 +310,49 @@ describe('liked list class', () => {
   });
 
   it('kth -> linkedlist of size 1',()=>{
-let ll=new LinkedList();
-ll.append(5);
+    let ll=new LinkedList();
+    ll.append(5);
 
-expect(ll.kthFromEnd(0)).toEqual(5);
+    expect(ll.kthFromEnd(0)).toEqual(5);
   });
 
   it('kth -> linkedlist of size 1',()=>{
-let ll=new LinkedList();
-ll.append(5);
+    let ll=new LinkedList();
+    ll.append(5);
 
-expect(ll.kthFromEnd(1)).toThrowError;
+    expect(ll.kthFromEnd(1)).toThrowError;
   });
+
+});
+
+describe('zipLinkedList', () => {
+  it('test zipLists',()=>{
+    let list1=new LinkedList();
+    list1.append(1);
+    list1.append(3);
+    list1.append(5);
+
+    let list2=new LinkedList();
+    list2.append(2);
+    list2.append(4);
+    list2.append(6);
+
+    // let zl=new LinkedList();
+    let zipList=ZipLists(list1,list2);
+
+    expect(zipList.toString()).toEqual(`{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } -> NULL`);
+
+
+  });
+  it('test err',()=>{
+    let num=5;
+    let list1=new LinkedList();
+    list1.append(5);
+    list1.append(4);
+
+    let zipList=ZipLists(list1,num);
+
+    expect(zipList).toThrowError;
+});
 
 });
