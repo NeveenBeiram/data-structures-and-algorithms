@@ -60,12 +60,13 @@ class Queue{
   enqueue (value){
     let node=new Node(value);
     try{
-      while(this.isEmpty){
+      if(this.isEmpty()){
         this.front=node;
         this.tail=node;
+      }else{
+        this.tail.next=node;
+        this.tail=node;
       }
-      this.tail.next=node;
-      this.tail=node;
     }catch(err){
       throw new Error(`you must enter a value to add it`,err);
     }
@@ -73,7 +74,7 @@ class Queue{
 
   dequeue(){
     try{
-      while(!this.isEmpty){
+      if(!this.isEmpty()){
         let val=this.front.value;
         this.front=this.front.next;
         return val;
@@ -84,7 +85,7 @@ class Queue{
   }
   peek(){
     try{
-      if(!this.isEmpty){
+      if(!this.isEmpty()){
         let val= this.front.value;
         return val;
       }
