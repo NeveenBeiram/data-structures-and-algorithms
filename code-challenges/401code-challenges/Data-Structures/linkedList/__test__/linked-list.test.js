@@ -181,6 +181,12 @@ describe('liked list class', () => {
 
   });
 
+  it('should throw error if not specifying the value in the append',()=>{
+    let ll=new LinkedList();
+
+    expect(ll.append()).toThrowError;
+  });
+
 
 
   it('should throw error if the value not exist to add after it',()=>{
