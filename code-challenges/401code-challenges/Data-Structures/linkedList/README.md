@@ -95,7 +95,8 @@ functions for the linked list
 
 ## API
 
-![white board](./whiteboard7.PNG)
+<!-- ![white board](./whiteboard7.PNG) -->
+![white board](./editwhite.PNG)
 
 [code](./linked-list.js)
 
