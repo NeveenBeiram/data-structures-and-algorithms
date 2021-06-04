@@ -4,7 +4,7 @@ const Node = require('../node');
 const LinkedList = require('../linked-list');
 const { expect } = require('@jest/globals');
 
-const ZipLists=require('../zipLinkedList');
+const zipLists=require('../zipLinkedList');
 
 
 describe('liked list class', () => {
@@ -338,7 +338,7 @@ describe('zipLinkedList', () => {
     list2.append(6);
 
     // let zl=new LinkedList();
-    let zipList=ZipLists(list1,list2);
+    let zipList=zipLists(list1,list2);
 
     expect(zipList.toString()).toEqual(`{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } -> NULL`);
 
@@ -350,9 +350,9 @@ describe('zipLinkedList', () => {
     list1.append(5);
     list1.append(4);
 
-    let zipList=ZipLists(list1,num);
+    let zipList=zipLists(list1,num);
 
     expect(zipList).toThrowError;
-});
+  });
 
 });
