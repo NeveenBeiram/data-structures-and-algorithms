@@ -135,7 +135,7 @@ function :
 
 ## API
 
-![white board](./white8.PNG)
+![white board](./ziplistwhiteedit.PNG)
 
 [code](./zipLinkedList.js)
 
