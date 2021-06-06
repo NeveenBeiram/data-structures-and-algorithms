@@ -33,5 +33,5 @@ method for each of the depth first traversals:
 ## API
 
 ![whiteboard](./white15.png)
-
+![white2](./c15.PNG)
 * [code](tree.js)
