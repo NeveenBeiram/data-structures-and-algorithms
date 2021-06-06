@@ -35,3 +35,21 @@ method for each of the depth first traversals:
 ![whiteboard](./white15.png)
 ![white2](./c15.PNG)
 * [code](tree.js)
+
+# Challenge Summary
+* code challenge 16 : 
+
+findMaximumValue: function that find the maximum value in the binary tree.
+
+## Whiteboard Process
+![whiteboard](./white16.PNG)
+
+## Approach & Efficiency
+
+- Time : O(h)
+- Space :O(1)
+
+## Solution
+npm test tree.test.js
+
+- [code](tree.js)

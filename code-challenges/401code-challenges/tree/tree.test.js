@@ -54,6 +54,38 @@ describe('binary tree test',()=>{
     expect(postResult).toEqual(expected);
   });
 
+
+
+  it('findMaximumValue test',()=>{
+    let one=new Node(1);
+    let two=new Node(2);
+    let three =new Node(3);
+    let four=new Node(4);
+    let five=new Node(5);
+    let six=new Node(6);
+    let seven=new Node(7);
+
+    one.left=two;
+    two.right=three;
+    three.left=four;
+    four.left=five;
+    one.right=six;
+    six.right=seven;
+    //         1
+    //    2          6
+    //        3          7
+    //      4
+    //   5
+    tree=new BinaryTree();
+    tree.root=one;
+    expect(tree.findMaximumValue()).toEqual(7);
+  });
+  it('find maximum empty tree',()=>{
+    tree=new BinaryTree();
+    expect(tree.findMaximumValue()).toBe(`it's an empty tree!`);
+  });
+
+
 });
 
 describe('binary search tree test',()=>{
