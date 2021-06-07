@@ -85,7 +85,26 @@ describe('binary tree test',()=>{
     expect(tree.findMaximumValue()).toBe(`it's an empty tree!`);
   });
 
+  it('breadthFirst test', () => {
+    tree = new BinaryTree();
 
+    let root1 = new Node(10);
+    tree.root=root1;
+    let left= new Node(5);
+    let right =new Node(9);
+    root1.left=left;
+    root1.right=right;
+
+    right.left=new Node(15);
+    right.left.right=new Node(16);
+
+    expect(tree.breadthFirst()).toEqual([10, 5, 9,15,16]);
+
+  });
+
+  it('breadthFirst test empty tree',()=>{});
+  tree= new BinaryTree();
+  expect(tree.breadthFirst()).toEqual(`it's an empty tree`);
 });
 
 describe('binary search tree test',()=>{
