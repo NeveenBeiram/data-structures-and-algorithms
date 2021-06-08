@@ -43,4 +43,4 @@ When you finish the assignment each day, make a new pull request from your daily
 |12|[readme code challenge12](401code-challenges/fifoAnimalShelter/readme.md)|
 |13|[readme code challenge 13](401code-challenges/multiBracketValidation/readme.md)|
 |15|[readme code challenge 15](401code-challenges/tree/readme.md)|
-
+|18|[readme code challenge 18](401code-challenges/fizzBuzzTree/readme.md)|
