@@ -45,3 +45,5 @@ When you finish the assignment each day, make a new pull request from your daily
 |15|[readme code challenge 15](401code-challenges/tree/readme.md)|
 |18|[readme code challenge 18](401code-challenges/fizzBuzzTree/readme.md)|
 |26|[readme code challenge 26](401code-challenges/insertionSort/readme.md)|
+|27|[readme code challenge 27](401code-challenges/mergeSort/readme.md)|
+|28|[readme code challenge 28](401code-challenges/quickSort/readme.md)|
