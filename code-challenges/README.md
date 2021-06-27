@@ -48,3 +48,4 @@ When you finish the assignment each day, make a new pull request from your daily
 |27|[readme code challenge 27](401code-challenges/mergeSort/readme.md)|
 |28|[readme code challenge 28](401code-challenges/quickSort/readme.md)|
 |30|[readme code challenge 30](401code-challenges/hashTable/hashTable.js)|
+|31|[readme code challenge 31](401code-challenges/repeatedWord/readme.md)|
