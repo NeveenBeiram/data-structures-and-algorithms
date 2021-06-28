@@ -8,7 +8,7 @@ const hashMapTreeIntersection=require('./hashmap-tree-intersection');
 
 
 describe('hash map treeIntersection Test', () => {
-  let tree1,tree2, tree3;
+  let tree1,tree2, tree3,tree4;
   beforeAll(()=>{
     tree1 = new BT();
     tree2 = new BT();
@@ -47,6 +47,8 @@ describe('hash map treeIntersection Test', () => {
     let f=new Node(7);
     th.right=f;
 
+    tree4=new BT();
+
   });
   it('can return a set of values found in both trees', () => {
     expect(hashMapTreeIntersection(tree1, tree2)).toEqual([150,60,80]);
@@ -56,6 +58,9 @@ describe('hash map treeIntersection Test', () => {
   });
   it('return an exception if the trees values are unique', () => {
     expect(hashMapTreeIntersection(tree1, tree3)).toEqual('no match value');
+  });
+  it('empty tree',()=>{
+    expect(hashMapTreeIntersection(tree1,tree4)).toEqual('tree is empty!');
   });
 });
 
